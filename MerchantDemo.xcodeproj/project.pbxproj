@@ -14,6 +14,11 @@
 		1001E2852CDD96170023A03C /* MerchantDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1001E2842CDD96170023A03C /* MerchantDemoTests.swift */; };
 		1001E28F2CDD96170023A03C /* MerchantDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1001E28E2CDD96170023A03C /* MerchantDemoUITests.swift */; };
 		1001E2912CDD96170023A03C /* MerchantDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1001E2902CDD96170023A03C /* MerchantDemoUITestsLaunchTests.swift */; };
+		1001E29E2CDD96780023A03C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1001E29D2CDD96780023A03C /* HomeView.swift */; };
+		1001E2A02CDD969A0023A03C /* CardCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1001E29F2CDD969A0023A03C /* CardCheckoutView.swift */; };
+		1001E2A72CDD9B5F0023A03C /* CardPayments in Frameworks */ = {isa = PBXBuildFile; productRef = 1001E2A62CDD9B5F0023A03C /* CardPayments */; };
+		AC5563E52CDDF203006F0A27 /* PayPalAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5563E42CDDF203006F0A27 /* PayPalAuthManager.swift */; };
+		AC63A0DC2CDDA1E9000E7493 /* CreateOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63A0DB2CDDA1E9000E7493 /* CreateOrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		1001E28A2CDD96170023A03C /* MerchantDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerchantDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1001E28E2CDD96170023A03C /* MerchantDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantDemoUITests.swift; sourceTree = "<group>"; };
 		1001E2902CDD96170023A03C /* MerchantDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1001E29D2CDD96780023A03C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1001E29F2CDD969A0023A03C /* CardCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCheckoutView.swift; sourceTree = "<group>"; };
+		AC5563E42CDDF203006F0A27 /* PayPalAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalAuthManager.swift; sourceTree = "<group>"; };
+		AC63A0DB2CDDA1E9000E7493 /* CreateOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1001E2A72CDD9B5F0023A03C /* CardPayments in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,10 @@
 			children = (
 				1001E2732CDD96150023A03C /* MerchantDemoApp.swift */,
 				1001E2752CDD96150023A03C /* ContentView.swift */,
+				1001E29D2CDD96780023A03C /* HomeView.swift */,
+				1001E29F2CDD969A0023A03C /* CardCheckoutView.swift */,
+				AC63A0DB2CDDA1E9000E7493 /* CreateOrderView.swift */,
+				AC5563E42CDDF203006F0A27 /* PayPalAuthManager.swift */,
 				1001E2772CDD96170023A03C /* Assets.xcassets */,
 				1001E2792CDD96170023A03C /* Preview Content */,
 			);
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = MerchantDemo;
+			packageProductDependencies = (
+				1001E2A62CDD9B5F0023A03C /* CardPayments */,
+			);
 			productName = MerchantDemo;
 			productReference = 1001E2702CDD96150023A03C /* MerchantDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 1001E2672CDD96150023A03C;
+			packageReferences = (
+				1001E2A52CDD9B5F0023A03C /* XCRemoteSwiftPackageReference "paypal-ios" */,
+			);
 			productRefGroup = 1001E2712CDD96150023A03C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5563E52CDDF203006F0A27 /* PayPalAuthManager.swift in Sources */,
+				1001E2A02CDD969A0023A03C /* CardCheckoutView.swift in Sources */,
+				AC63A0DC2CDDA1E9000E7493 /* CreateOrderView.swift in Sources */,
+				1001E29E2CDD96780023A03C /* HomeView.swift in Sources */,
 				1001E2762CDD96150023A03C /* ContentView.swift in Sources */,
 				1001E2742CDD96150023A03C /* MerchantDemoApp.swift in Sources */,
 			);
@@ -425,6 +449,7 @@
 				DEVELOPMENT_TEAM = 4XLSSR63Y5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MerchantDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +479,7 @@
 				DEVELOPMENT_TEAM = 4XLSSR63Y5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MerchantDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1001E2A52CDD9B5F0023A03C /* XCRemoteSwiftPackageReference "paypal-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paypal/paypal-ios/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1001E2A62CDD9B5F0023A03C /* CardPayments */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1001E2A52CDD9B5F0023A03C /* XCRemoteSwiftPackageReference "paypal-ios" */;
+			productName = CardPayments;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1001E2682CDD96150023A03C /* Project object */;
 }
